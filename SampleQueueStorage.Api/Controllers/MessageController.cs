@@ -24,14 +24,14 @@ namespace SampleQueueStorage.Api.Controllers
         [Route(""), HttpPost]
         public IHttpActionResult Add([FromBody] MessageDto messageDto)
         {
-            this._messageService.SaveMessageToDb(messageDto);
+            this._messageService.Insert(messageDto);
             return this.Ok();
         }
 
         [Route(""), HttpPut]
         public IHttpActionResult SendMessage([FromBody] MessageDto messageDto)
         {
-            this._messageService.SendMessage(messageDto);
+            this._messageService.InsertQueue(messageDto);
             return this.Ok();
         }
     }

@@ -36,7 +36,7 @@ namespace SampleQueueStorage.Core.Services
             return messages;
         }
 
-        public void SendMessage(MessageDto messageDto)
+        public void InsertQueue(MessageDto messageDto)
         {
             // Retrieve storage account from connection string.
             CloudStorageAccount storageAccount = CloudStorageAccount.Parse(
@@ -59,7 +59,7 @@ namespace SampleQueueStorage.Core.Services
             queue.AddMessage(queueMessage);
         }
 
-        public void SaveMessageToDb(MessageDto messageDto)
+        public void Insert(MessageDto messageDto)
         {
             var message = new Message
             {

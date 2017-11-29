@@ -7,8 +7,8 @@ namespace SampleQueueStorage.Core.Services
     {
         IEnumerable<MessageDto> GetMessages();
 
-        void SaveMessageToDb(MessageDto messageDto);
+        void Insert(MessageDto messageDto);
 
-        void SendMessage(MessageDto messageDto);
+        void InsertQueue(MessageDto messageDto);
     }
 }
