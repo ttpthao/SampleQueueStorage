@@ -22,8 +22,8 @@ export class MessageComponent implements OnInit {
   }
 
   private loadData() {
-    const url = 'http://localhost:56604/messages';
-    // const url = 'http://samplequeuestorageapi.azurewebsites.net/messages';
+    // const url = 'http://localhost:56604/messages';
+    const url = 'http://samplequeuestorageapi.azurewebsites.net/messages';
 
     this.http.get(url)
       .subscribe(data => {
@@ -38,7 +38,8 @@ export class MessageComponent implements OnInit {
       QueueMessage: this.messContent
     };
 
-    const url = 'http://localhost:56604/messages';
+    // const url = 'http://localhost:56604/messages';
+    const url = 'http://samplequeuestorageapi.azurewebsites.net/messages';
 
     const headers = new Headers({ 'Content-Type': 'application/json' });
     const options = new RequestOptions({ headers: headers });
