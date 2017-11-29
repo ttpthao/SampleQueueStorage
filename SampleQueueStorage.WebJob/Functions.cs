@@ -16,7 +16,7 @@ namespace SampleQueueStorage.WebJob
 
             var httpClient = new HttpClient();
 
-            var response = await httpClient.PostAsJsonAsync("http://localhost:56604/messages", messageDto);
+            var response = await httpClient.PostAsJsonAsync("http://samplequeuestorageapi.azurewebsites.net/messages", messageDto);
         }
 
 
