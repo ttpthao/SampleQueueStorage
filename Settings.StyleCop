@@ -1,0 +1,56 @@
+<StyleCopSettings Version="105">
+  <Analyzers>
+    <Analyzer AnalyzerId="StyleCop.CSharp.DocumentationRules">
+      <Rules>
+        <Rule Name="FileMustHaveHeader">
+          <RuleSettings>
+            <BooleanProperty Name="Enabled">False</BooleanProperty>
+          </RuleSettings>
+        </Rule>
+        <Rule Name="ElementsMustBeDocumented">
+          <RuleSettings>
+            <BooleanProperty Name="Enabled">False</BooleanProperty>
+          </RuleSettings>
+        </Rule>
+        <Rule Name="EnumerationItemsMustBeDocumented">
+          <RuleSettings>
+            <BooleanProperty Name="Enabled">False</BooleanProperty>
+          </RuleSettings>
+        </Rule>
+		 <Rule Name="PartialElementsMustBeDocumented">
+          <RuleSettings>
+            <BooleanProperty Name="Enabled">False</BooleanProperty>
+          </RuleSettings>
+        </Rule>
+      </Rules>
+      <AnalyzerSettings />
+    </Analyzer>
+    <Analyzer AnalyzerId="StyleCop.CSharp.ReadabilityRules">
+      <Rules>
+        <Rule Name="DoNotUseRegions">
+          <RuleSettings>
+            <BooleanProperty Name="Enabled">True</BooleanProperty>
+          </RuleSettings>
+        </Rule>
+      </Rules>
+      <AnalyzerSettings />
+    </Analyzer>
+	<Analyzer AnalyzerId="Microsoft.StyleCop.CSharp.NamingRules">
+    <AnalyzerSettings>
+      <CollectionProperty Name="Hungarian">
+        <Value>is</Value>
+		<Value>oc</Value>
+		<Value>as</Value>
+		<Value>do</Value>
+		<Value>if</Value>
+		<Value>in</Value>
+		<Value>my</Value>
+		<Value>no</Value>
+		<Value>on</Value>
+		<Value>to</Value>
+		<Value>ui</Value>
+      </CollectionProperty>
+    </AnalyzerSettings>
+  </Analyzer>
+  </Analyzers>
+</StyleCopSettings>
