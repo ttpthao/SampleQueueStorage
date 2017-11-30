@@ -1,0 +1,33 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Sample Queue Storage
+  </h1>
+</div>
+<label>Input your message </label>
+<input type="text" [(ngModel)]="messContent" />
+<button (click)="onSend()">Send</button>
+<div>
+  <table>
+    <thead>
+      <tr role="row">
+        <th>
+          Id
+        </th>
+        <th>
+          Message
+        </th>
+        <th>
+          Date
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let message of messages">
+        <td>{{message.Id}}</td>
+        <td>{{message.QueueMessage}}</td>
+        <td>{{message.CreatedDate}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

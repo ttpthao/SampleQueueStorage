@@ -6,4 +6,4 @@ You can view tutorial guide how to implement it at this link: https://phuongthao
 
 # Demo
 
-WebJob: http://samplequeuestoragewebjob20171129012633.azurewebsites.net/
+Api: http://samplequeuestorageapi.azurewebsites.net/swagger/ui/index
