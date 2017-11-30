@@ -6,4 +6,5 @@ You can view tutorial guide how to implement it at this link: https://phuongthao
 
 # Demo
 
+Client: http://samplequeuestorageclient.azurewebsites.net/
 Api: http://samplequeuestorageapi.azurewebsites.net/swagger/ui/index
